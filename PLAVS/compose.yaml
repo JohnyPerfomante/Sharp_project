@@ -1,0 +1,38 @@
+name: plavs
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-plavs}
+      POSTGRES_USER: ${POSTGRES_USER:-plavs}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run python3 scripts/setup.py first}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+    restart: unless-stopped
+  app:
+    build: .
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
+      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=${POSTGRES_DB:-plavs};Username=${POSTGRES_USER:-plavs};Password=${POSTGRES_PASSWORD}
+      Seed__DemoUsers: ${PLAVS_DEMO_USERS:-true}
+      Seed__DemoPassword: ${PLAVS_DEMO_PASSWORD:-Plavs!Demo2026}
+    ports:
+      - "127.0.0.1:${PLAVS_PORT:-5080}:8080"
+    volumes:
+      - model_data:/app/models/onnx:ro
+      - protection_keys:/app/keys
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  postgres_data:
+  protection_keys:
+  model_data:

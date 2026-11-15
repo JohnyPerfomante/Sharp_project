@@ -1,0 +1,12 @@
+{
+  "repository": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "license": "Apache-2.0",
+  "maxSequenceLength": 128,
+  "dimensions": 384,
+  "pooling": "attention-mask mean pooling, followed by L2 normalization",
+  "files": [
+    { "source": "onnx/model.onnx", "destination": "model.onnx", "size": 470301610, "sha256": "10f7a088420252b26caf819236ca2c9d2987afd0fc06fec7553b542a5655a05a" },
+    { "source": "tokenizer.json", "destination": "tokenizer.json", "size": 9081518, "sha256": "2c3387be76557bd40970cec13153b3bbf80407865484b209e655e5e4729076b8" }
+  ]
+}

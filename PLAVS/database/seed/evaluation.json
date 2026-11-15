@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Q001-Exact",
+    "questionCode": "Q001",
+    "kind": "Exact",
+    "text": "Алгоритм — це скінченна послідовність однозначних кроків для розв'язання класу задач. Основними властивостями є дискретність, визначеність, скінченність і результативність.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q001-Paraphrase",
+    "questionCode": "Q001",
+    "kind": "Paraphrase",
+    "text": "Алгоритмом називають упорядковані інструкції, кожна з яких має точний зміст; їх виконання завершується після скінченного числа дій та дає результат.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q001-Partial",
+    "questionCode": "Q001",
+    "kind": "Partial",
+    "text": "Алгоритм — це інструкції для розв’язання задачі.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q001-Typo",
+    "questionCode": "Q001",
+    "kind": "Typo",
+    "text": "Алгоритм — це скінченна послідовність однозначних кроків для розв'язання класу задач. Основними властивостями є дискретність, визначченість, скінченність і результативність.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q001-Wrong",
+    "questionCode": "Q001",
+    "kind": "Wrong",
+    "text": "Алгоритм — це довільний нескінченний процес без визначеного результату.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q003-Exact",
+    "questionCode": "Q003",
+    "kind": "Exact",
+    "text": "Двійковий пошук знаходить елемент у відсортованій послідовності, порівнюючи його із середнім елементом і щоразу відкидаючи половину діапазону. Для масиву він потребує O(log n) порівнянь.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q003-Paraphrase",
+    "questionCode": "Q003",
+    "kind": "Paraphrase",
+    "text": "Бінарний пошук вимагає впорядкованого набору даних. Кожна перевірка середини зменшує область пошуку вдвічі, тому число порівнянь логарифмічне.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q003-Partial",
+    "questionCode": "Q003",
+    "kind": "Partial",
+    "text": "Двійковий пошук працює у відсортованій послідовності.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q003-Typo",
+    "questionCode": "Q003",
+    "kind": "Typo",
+    "text": "Двійкоoвий пошук знаходить елемент у відсортованій послідовності, порівнюючи його із середнім елементом і щоразу відкидаючи половину діапазону. Для масиву він потребує O(log n) порівнянь.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q003-Wrong",
+    "questionCode": "Q003",
+    "kind": "Wrong",
+    "text": "Двійковий пошук завжди перевіряє всі елементи невідсортованого масиву за O(n).",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q004-Exact",
+    "questionCode": "Q004",
+    "kind": "Exact",
+    "text": "Стек працює за принципом LIFO: останній доданий елемент вилучається першим. Черга використовує FIFO: елементи вилучаються в порядку надходження.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q004-Paraphrase",
+    "questionCode": "Q004",
+    "kind": "Paraphrase",
+    "text": "У стеку доступний найновіший елемент, а в черзі — найдавніший. Цим відповідають правила останнім прийшов — першим вийшов та першим прийшов — першим вийшов.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q004-Partial",
+    "questionCode": "Q004",
+    "kind": "Partial",
+    "text": "Стек повертає останній елемент першим.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q004-Typo",
+    "questionCode": "Q004",
+    "kind": "Typo",
+    "text": "Стек працює за принципоoм LIFO: останній доданий елемент вилучається першим. Черга використовує FIFO: елементи вилучаються в порядку надходження.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q004-Wrong",
+    "questionCode": "Q004",
+    "kind": "Wrong",
+    "text": "Стек працює за FIFO, а черга за LIFO: перший вилучає найстаріший елемент.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q006-Exact",
+    "questionCode": "Q006",
+    "kind": "Exact",
+    "text": "Рекурсія — це виклик функцією самої себе для меншої підзадачі. Базовий випадок завершує обчислення без нового виклику, а кожен крок має наближати задачу до нього.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q006-Paraphrase",
+    "questionCode": "Q006",
+    "kind": "Paraphrase",
+    "text": "Рекурсивний алгоритм зводить задачу до простішої задачі того самого виду. Умова зупинки є базовим випадком і запобігає нескінченному ланцюгу викликів.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q006-Partial",
+    "questionCode": "Q006",
+    "kind": "Partial",
+    "text": "Рекурсія означає, що функція викликає сама себе.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q006-Typo",
+    "questionCode": "Q006",
+    "kind": "Typo",
+    "text": "Рекурсія — це виклик функцією самоoї себе для меншої підзадачі. Базовий випадок завершує обчислення без нового виклику, а кожен крок має наближати задачу до нього.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q006-Wrong",
+    "questionCode": "Q006",
+    "kind": "Wrong",
+    "text": "Рекурсія — це функція, яка ніколи не викликає себе й не потребує умови завершення.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q011-Exact",
+    "questionCode": "Q011",
+    "kind": "Exact",
+    "text": "Об'єктно-орієнтоване програмування є парадигмою організації програм навколо об'єктів, що поєднують стан і поведінку. Класи задають структуру об'єктів; основні механізми — інкапсуляція, успадкування й поліморфізм.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q011-Paraphrase",
+    "questionCode": "Q011",
+    "kind": "Paraphrase",
+    "text": "В ООП дані та операції над ними об'єднуються в об'єкти. Їх описують класами й використовують інкапсуляцію, успадкування та поліморфну поведінку.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q011-Partial",
+    "questionCode": "Q011",
+    "kind": "Partial",
+    "text": "ООП використовує класи й об’єкти.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q011-Typo",
+    "questionCode": "Q011",
+    "kind": "Typo",
+    "text": "Об'єктноo-орієнтоване програмування є парадигмою організації програм навколо об'єктів, що поєднують стан і поведінку. Класи задають структуру об'єктів; основні механізми — інкапсуляція, успадкування й поліморфізм.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q011-Wrong",
+    "questionCode": "Q011",
+    "kind": "Wrong",
+    "text": "ООП забороняє класи та об’єкти і використовує лише послідовні команди без даних.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q013-Exact",
+    "questionCode": "Q013",
+    "kind": "Exact",
+    "text": "Інкапсуляція об'єднує дані та поведінку й обмежує прямий доступ до внутрішнього стану. Зовнішній код працює через публічний інтерфейс, який підтримує інваріанти об'єкта.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q013-Paraphrase",
+    "questionCode": "Q013",
+    "kind": "Paraphrase",
+    "text": "Об'єкт приховує деталі реалізації та дозволяє змінювати дані контрольованими методами. Це захищає його коректний стан від довільного зовнішнього втручання.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q013-Partial",
+    "questionCode": "Q013",
+    "kind": "Partial",
+    "text": "Інкапсуляція приховує поля об’єкта.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q013-Typo",
+    "questionCode": "Q013",
+    "kind": "Typo",
+    "text": "Інкапсуляція об'єднує данні та поведінку й обмежує прямий доступ до внутрішнього стану. Зовнішній код працює через публічний інтерфейс, який підтримує інваріанти об'єкта.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q013-Wrong",
+    "questionCode": "Q013",
+    "kind": "Wrong",
+    "text": "Інкапсуляція означає необмежений прямий доступ до всіх внутрішніх полів об’єкта.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q021-Exact",
+    "questionCode": "Q021",
+    "kind": "Exact",
+    "text": "Реляційна модель подає дані як відношення, які практично представляють таблицями з рядками й атрибутами. Ключі ідентифікують записи, а обмеження цілісності та зовнішні ключі підтримують узгоджені зв'язки.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q021-Paraphrase",
+    "questionCode": "Q021",
+    "kind": "Paraphrase",
+    "text": "У реляційній базі сутності описані таблицями: кожен рядок є записом, а стовпець — атрибутом. Первинні та зовнішні ключі забезпечують ідентифікацію й зв'язування.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q021-Partial",
+    "questionCode": "Q021",
+    "kind": "Partial",
+    "text": "Реляційна база зберігає інформацію в таблицях.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q021-Typo",
+    "questionCode": "Q021",
+    "kind": "Typo",
+    "text": "Реляційна модель подає данні як відношення, які практично представляють таблицями з рядками й атрибутами. Ключі ідентифікують записи, а обмеження цілісності та зовнішні ключі підтримують узгоджені зв'язки.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q021-Wrong",
+    "questionCode": "Q021",
+    "kind": "Wrong",
+    "text": "Реляційна модель зберігає тільки зображення без таблиць, ключів або відношень.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q023-Exact",
+    "questionCode": "Q023",
+    "kind": "Exact",
+    "text": "ACID охоплює атомарність, узгодженість, ізольованість і довговічність. Транзакція виконується цілком або скасовується, зберігає обмеження, контрольовано взаємодіє з паралельними транзакціями та не втрачає зафіксований результат.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q023-Paraphrase",
+    "questionCode": "Q023",
+    "kind": "Paraphrase",
+    "text": "Атомарність гарантує принцип усе або нічого; узгодженість зберігає правила даних. Ізольованість керує паралельним виконанням, а довговічність — збереженням після COMMIT.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q023-Partial",
+    "questionCode": "Q023",
+    "kind": "Partial",
+    "text": "Транзакції дозволяють зберігати зміни разом.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q023-Typo",
+    "questionCode": "Q023",
+    "kind": "Typo",
+    "text": "ACID оoхоплює атомарність, узгодженість, ізольованість і довговічність. Транзакція виконується цілком або скасовується, зберігає обмеження, контрольовано взаємодіє з паралельними транзакціями та не втрачає зафіксований результат.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q023-Wrong",
+    "questionCode": "Q023",
+    "kind": "Wrong",
+    "text": "ACID означає, що після збою можна зберегти будь-яку половину транзакції, а COMMIT не гарантує нічого.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q031-Exact",
+    "questionCode": "Q031",
+    "kind": "Exact",
+    "text": "Процес має власний віртуальний адресний простір і ресурси. Потоки одного процесу спільно використовують його пам'ять, але кожен має власні стек, регістри та стан виконання.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q031-Paraphrase",
+    "questionCode": "Q031",
+    "kind": "Paraphrase",
+    "text": "Процес ізолює середовище програми, тоді як потоки є паралельними контекстами в межах цього середовища. Їх спільна пам'ять потребує синхронізації.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q031-Partial",
+    "questionCode": "Q031",
+    "kind": "Partial",
+    "text": "Потоки належать одному процесу.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q031-Typo",
+    "questionCode": "Q031",
+    "kind": "Typo",
+    "text": "Процес має власний віртуальний адресний простір і ресурси. Потоки одного процсу спільно використовують його память, але кожен має власні стек, регістри та стан виконання.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q031-Wrong",
+    "questionCode": "Q031",
+    "kind": "Wrong",
+    "text": "Усі процеси завжди мають одну спільну пам’ять, а потоки одного процесу ніколи не ділять дані.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q035-Exact",
+    "questionCode": "Q035",
+    "kind": "Exact",
+    "text": "Взаємне блокування — це стан, коли потоки нескінченно очікують ресурси один одного. Умови Коффмана: взаємне виключення, утримання й очікування, відсутність примусового вилучення та циклічне очікування.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q035-Paraphrase",
+    "questionCode": "Q035",
+    "kind": "Paraphrase",
+    "text": "Deadlock можливий, якщо ресурси монопольні, потоки утримують одні та чекають інші, їх не можна примусово забрати й утворюється цикл залежностей.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q035-Partial",
+    "questionCode": "Q035",
+    "kind": "Partial",
+    "text": "Взаємне блокування — це очікування ресурсів.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q035-Typo",
+    "questionCode": "Q035",
+    "kind": "Typo",
+    "text": "Взаємне блоoкування — це стан, коли потоки нескінченно очікують ресурси один одного. Умови Коффмана: взаємне виключення, утримання й очікування, відсутність примусового вилучення та циклічне очікування.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q035-Wrong",
+    "questionCode": "Q035",
+    "kind": "Wrong",
+    "text": "Взаємне блокування прискорює роботу: усі потоки завжди отримують ресурси без очікування.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q042-Exact",
+    "questionCode": "Q042",
+    "kind": "Exact",
+    "text": "TCP забезпечує орієнтований на з'єднання надійний упорядкований потік байтів із повторною передачею та керуванням перевантаженням. UDP передає незалежні датаграми без гарантій доставки й порядку, з меншими протокольними накладними витратами.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q042-Paraphrase",
+    "questionCode": "Q042",
+    "kind": "Paraphrase",
+    "text": "TCP відстежує підтвердження, відновлює втрати та приховує межі повідомлень у потоці. UDP зберігає межі датаграм, але надійність за потреби реалізує застосунок.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q042-Partial",
+    "questionCode": "Q042",
+    "kind": "Partial",
+    "text": "TCP забезпечує надійну передачу.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q042-Typo",
+    "questionCode": "Q042",
+    "kind": "Typo",
+    "text": "TCP забезпечує оoрієнтований на з'єднання надійний упорядкований потік байтів із повторною передачею та керуванням перевантаженням. UDP передає незалежні датаграми без гарантій доставки й порядку, з меншими протокольними накладними витратами.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q042-Wrong",
+    "questionCode": "Q042",
+    "kind": "Wrong",
+    "text": "UDP гарантує доставку й порядок, а TCP не перевіряє втрати та не встановлює з’єднання.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q045-Exact",
+    "questionCode": "Q045",
+    "kind": "Exact",
+    "text": "HTTPS передає HTTP через захищений канал TLS, забезпечуючи шифрування, цілісність і автентифікацію сервера за сертифікатом. Він захищає трафік у дорозі, але не гарантує безпеку самого застосунку.",
+    "expectedCategory": "High",
+    "proposedScore": 100,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q045-Paraphrase",
+    "questionCode": "Q045",
+    "kind": "Paraphrase",
+    "text": "TLS під HTTP не дозволяє сторонньому спостерігачеві просто прочитати чи непомітно змінити трафік. Сертифікат дає клієнту можливість перевірити сервер.",
+    "expectedCategory": "High",
+    "proposedScore": 95,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q045-Partial",
+    "questionCode": "Q045",
+    "kind": "Partial",
+    "text": "HTTPS шифрує трафік.",
+    "expectedCategory": "Partial",
+    "proposedScore": 60,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q045-Typo",
+    "questionCode": "Q045",
+    "kind": "Typo",
+    "text": "HTTPS передає HTTP через захищений канал TLS, забезпечуючи шифрування, цілісність і автентифікацію сервера за сертифікатоoм. Він захищає трафік у дорозі, але не гарантує безпеку самого застосунку.",
+    "expectedCategory": "High",
+    "proposedScore": 90,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  },
+  {
+    "id": "Q045-Wrong",
+    "questionCode": "Q045",
+    "kind": "Wrong",
+    "text": "HTTPS передає паролі відкритим текстом без шифрування та не використовує TLS.",
+    "expectedCategory": "Low",
+    "proposedScore": 10,
+    "expertScore": null,
+    "labelStatus": "DraftForTeacher"
+  }
+]

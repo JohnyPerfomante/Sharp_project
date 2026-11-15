@@ -1,0 +1,748 @@
+{
+  "generatedAt": "2026-11-11T17:03:20.846411+00:00",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+  "algorithm": "plavs-1.0.0",
+  "settings": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "version": 1,
+    "alpha": 0.25,
+    "beta": 0.55,
+    "gamma": 0.2,
+    "highThreshold": 80,
+    "partialThreshold": 55
+  },
+  "hardware": {
+    "os": "macOS 26.6.2",
+    "architecture": "Arm64",
+    "logicalProcessors": 10
+  },
+  "labelStatus": "DraftForTeacher: authored expectations, not independent expert validation",
+  "total": 60,
+  "accuracy": 0.5833333333333334,
+  "classes": [
+    {
+      "label": "High",
+      "precision": 1,
+      "recall": 0.6666666666666666,
+      "f1": 0.8
+    },
+    {
+      "label": "Partial",
+      "precision": 0.2692307692307692,
+      "recall": 0.5833333333333334,
+      "f1": 0.3684210526315789
+    },
+    {
+      "label": "Low",
+      "precision": 0.4,
+      "recall": 0.3333333333333333,
+      "f1": 0.3636363636363636
+    }
+  ],
+  "matrixLabels": [
+    "High",
+    "Partial",
+    "Low"
+  ],
+  "confusionMatrix": [
+    [
+      24,
+      11,
+      1
+    ],
+    [
+      0,
+      7,
+      5
+    ],
+    [
+      0,
+      8,
+      4
+    ]
+  ],
+  "falseAcceptance": 0,
+  "wrongAutomaticallyHighWithoutReview": 0,
+  "falseRejectionOfParaphrases": 1,
+  "reviewRate": 0.6,
+  "latency": {
+    "p95Milliseconds": 51.9359,
+    "maxMilliseconds": 93.8263,
+    "includesFirstReferenceEmbedding": true
+  },
+  "benchmark1000Characters": {
+    "runs": 100,
+    "p95Milliseconds": 55.883,
+    "maxMilliseconds": 172.7034,
+    "references": 1,
+    "note": "Warm model, sequential single-client workload; long inputs are truncated at 128 tokens and require review."
+  },
+  "tokenizerGoldenCasesPassed": 4,
+  "ukrainianSmoke": {
+    "dimensions": 384,
+    "paraphraseSimilarity": 0.7163449903612991,
+    "unrelatedSimilarity": 0
+  },
+  "results": [
+    {
+      "id": "Q001-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 90.3738
+    },
+    {
+      "id": "Q001-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 64.91,
+      "needsReview": true,
+      "milliseconds": 33.2837
+    },
+    {
+      "id": "Q001-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Partial",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 63.5,
+      "needsReview": true,
+      "milliseconds": 14.5041
+    },
+    {
+      "id": "Q001-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.83,
+      "needsReview": false,
+      "milliseconds": 26.6274
+    },
+    {
+      "id": "Q001-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 66.98,
+      "needsReview": true,
+      "milliseconds": 10.554
+    },
+    {
+      "id": "Q003-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 53.7345
+    },
+    {
+      "id": "Q003-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 63.6,
+      "needsReview": true,
+      "milliseconds": 18.7517
+    },
+    {
+      "id": "Q003-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Partial",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 62.22,
+      "needsReview": true,
+      "milliseconds": 28.3554
+    },
+    {
+      "id": "Q003-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.81,
+      "needsReview": false,
+      "milliseconds": 23.8226
+    },
+    {
+      "id": "Q003-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 59.17,
+      "needsReview": true,
+      "milliseconds": 11.8052
+    },
+    {
+      "id": "Q004-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 34.8658
+    },
+    {
+      "id": "Q004-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 56.79,
+      "needsReview": true,
+      "milliseconds": 20.6722
+    },
+    {
+      "id": "Q004-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Partial",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 60.44,
+      "needsReview": true,
+      "milliseconds": 6.86
+    },
+    {
+      "id": "Q004-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.71,
+      "needsReview": false,
+      "milliseconds": 16.8164
+    },
+    {
+      "id": "Q004-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 75.46,
+      "needsReview": true,
+      "milliseconds": 13.1277
+    },
+    {
+      "id": "Q006-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 42.1962
+    },
+    {
+      "id": "Q006-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 74.87,
+      "needsReview": true,
+      "milliseconds": 20.8883
+    },
+    {
+      "id": "Q006-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Partial",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 58.03,
+      "needsReview": true,
+      "milliseconds": 7.9448
+    },
+    {
+      "id": "Q006-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.86,
+      "needsReview": false,
+      "milliseconds": 21.5192
+    },
+    {
+      "id": "Q006-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 58.47,
+      "needsReview": true,
+      "milliseconds": 10.7913
+    },
+    {
+      "id": "Q011-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 51.5772
+    },
+    {
+      "id": "Q011-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 77.3,
+      "needsReview": true,
+      "milliseconds": 26.3289
+    },
+    {
+      "id": "Q011-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Low",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 54.21,
+      "needsReview": true,
+      "milliseconds": 8.0877
+    },
+    {
+      "id": "Q011-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.82,
+      "needsReview": false,
+      "milliseconds": 28.1471
+    },
+    {
+      "id": "Q011-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Low",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 40.36,
+      "needsReview": true,
+      "milliseconds": 11.9677
+    },
+    {
+      "id": "Q013-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 39.9507
+    },
+    {
+      "id": "Q013-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Low",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 49.88,
+      "needsReview": true,
+      "milliseconds": 18.5693
+    },
+    {
+      "id": "Q013-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Low",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 48.24,
+      "needsReview": true,
+      "milliseconds": 9.0605
+    },
+    {
+      "id": "Q013-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.02,
+      "needsReview": false,
+      "milliseconds": 20.9111
+    },
+    {
+      "id": "Q013-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Low",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 54.11,
+      "needsReview": true,
+      "milliseconds": 12.681
+    },
+    {
+      "id": "Q021-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 46.2338
+    },
+    {
+      "id": "Q021-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 65.8,
+      "needsReview": true,
+      "milliseconds": 23.022
+    },
+    {
+      "id": "Q021-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Low",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 43.52,
+      "needsReview": true,
+      "milliseconds": 8.4809
+    },
+    {
+      "id": "Q021-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.03,
+      "needsReview": false,
+      "milliseconds": 23.0401
+    },
+    {
+      "id": "Q021-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Low",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 39.95,
+      "needsReview": true,
+      "milliseconds": 11.1929
+    },
+    {
+      "id": "Q023-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 51.9359
+    },
+    {
+      "id": "Q023-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 67.09,
+      "needsReview": true,
+      "milliseconds": 19.4931
+    },
+    {
+      "id": "Q023-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Low",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 26.29,
+      "needsReview": true,
+      "milliseconds": 7.2771
+    },
+    {
+      "id": "Q023-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.87,
+      "needsReview": false,
+      "milliseconds": 28.14
+    },
+    {
+      "id": "Q023-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Low",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 38.2,
+      "needsReview": true,
+      "milliseconds": 14.6721
+    },
+    {
+      "id": "Q031-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 34.7144
+    },
+    {
+      "id": "Q031-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 63.96,
+      "needsReview": true,
+      "milliseconds": 25.906
+    },
+    {
+      "id": "Q031-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Low",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 47.65,
+      "needsReview": true,
+      "milliseconds": 5.2592
+    },
+    {
+      "id": "Q031-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.24,
+      "needsReview": false,
+      "milliseconds": 16.6415
+    },
+    {
+      "id": "Q031-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 60.15,
+      "needsReview": true,
+      "milliseconds": 13.6625
+    },
+    {
+      "id": "Q035-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 93.8263
+    },
+    {
+      "id": "Q035-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 67.69,
+      "needsReview": true,
+      "milliseconds": 19.5219
+    },
+    {
+      "id": "Q035-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Partial",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 60,
+      "needsReview": true,
+      "milliseconds": 7.6278
+    },
+    {
+      "id": "Q035-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 93.1,
+      "needsReview": false,
+      "milliseconds": 23.9926
+    },
+    {
+      "id": "Q035-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 63.07,
+      "needsReview": true,
+      "milliseconds": 12.0542
+    },
+    {
+      "id": "Q042-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 48.2649
+    },
+    {
+      "id": "Q042-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 67.79,
+      "needsReview": true,
+      "milliseconds": 20.8766
+    },
+    {
+      "id": "Q042-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Partial",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 60.01,
+      "needsReview": true,
+      "milliseconds": 5.7882
+    },
+    {
+      "id": "Q042-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.83,
+      "needsReview": false,
+      "milliseconds": 26.4267
+    },
+    {
+      "id": "Q042-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 67.55,
+      "needsReview": true,
+      "milliseconds": 13.5448
+    },
+    {
+      "id": "Q045-Exact",
+      "kind": "Exact",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 100,
+      "expertScore": null,
+      "actualScore": 100,
+      "needsReview": false,
+      "milliseconds": 48.574
+    },
+    {
+      "id": "Q045-Paraphrase",
+      "kind": "Paraphrase",
+      "expected": "High",
+      "predicted": "Partial",
+      "proposedScore": 95,
+      "expertScore": null,
+      "actualScore": 55.56,
+      "needsReview": true,
+      "milliseconds": 16.1205
+    },
+    {
+      "id": "Q045-Partial",
+      "kind": "Partial",
+      "expected": "Partial",
+      "predicted": "Partial",
+      "proposedScore": 60,
+      "expertScore": null,
+      "actualScore": 62.18,
+      "needsReview": true,
+      "milliseconds": 4.8549
+    },
+    {
+      "id": "Q045-Typo",
+      "kind": "Typo",
+      "expected": "High",
+      "predicted": "High",
+      "proposedScore": 90,
+      "expertScore": null,
+      "actualScore": 99.89,
+      "needsReview": false,
+      "milliseconds": 23.4179
+    },
+    {
+      "id": "Q045-Wrong",
+      "kind": "Wrong",
+      "expected": "Low",
+      "predicted": "Partial",
+      "proposedScore": 10,
+      "expertScore": null,
+      "actualScore": 62.42,
+      "needsReview": true,
+      "milliseconds": 10.5277
+    }
+  ]
+}
